@@ -7,6 +7,44 @@ using namespace std;
 
 // hackerrank.com/challenges/climbing-the-leaderboard/problem
 
+
+/*
+#include <iostream>
+#include <limits>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+#define all(x) x.begin(), x.end()
+#define debug(x) std::cerr << "DEBUG: " << #x << " = " << x << std::endl
+
+int main() {
+  // freopen("in.txt", "r", stdin);
+  int n;
+  cin >> n;
+  vector<int> s(n);
+  for (int& x : s) {
+    cin >> x;
+  }
+  s.erase(unique(all(s)), s.end());
+  reverse(all(s));
+  int q;
+  cin >> q;
+  while (q--) {
+    int x;
+    cin >> x;
+    int less_or_equal = upper_bound(all(s), x) - s.begin();
+    // debug(less_or_equal);
+    int greater = s.size() - less_or_equal;
+    // debug(greater);
+    cout << greater + 1 << endl;
+  }
+  return 0;
+}
+*/
+
+
 vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {
 //    vector<int>::iterator it;
     vector<int>::reverse_iterator rit;
