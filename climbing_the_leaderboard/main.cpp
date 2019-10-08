@@ -67,11 +67,6 @@ vector<int> climbingLeaderboard(vector<int> scores, vector<int> alice) {
  
         //cout << endl;
     }    
-    if ((alice.size() == 200) && (scores.size() == 100)) {
-        // 41
-        for (int k = 0; k < 41; k++)
-            r.pop_back();
-    }
 //    cout << "size: " << scores.size() << endl;
     return r;
 }
